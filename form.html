@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>H+ Sports</title>
+<style type="text/css">
+	body {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 14px;
+	}
+	
+	.header {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 18px;
+	}
+	
+	.container {
+	    max-width: 100%;
+	    padding: 20px;
+	    margin: auto;
+	    box-sizing: border-box;
+	}
+</style>
+<link type="text/css" rel="stylesheet" href="resources/css/styles.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="header">Entry Form | Catalog</div>
+		<img src="resources/img/banner.jpeg" alt="Banner Image"/>
+				<!-- Make the table responsive -->
+		<div class="responsive-table">
+			<form id="item-form" action="CatalogServlet" name="task-form" method="post"
+				enctype="application/x-www-form-urlencoded">
+
+				<div>
+					<label>Product Name:</label><input id="productName"
+						type="text" name="name" />
+				</div>
+				<div>
+					<label>Manufacturer:</label><input type="text"
+						name="manufacturer" />
+				</div>
+				<div>
+					<label>SKU:</label><input type="text" name="sku" />
+				</div>
+
+				<input type="submit" value="Submit" />
+			</form>
+		</div>
+		<!-- Bottom section (footer) -->
+	    <div class="footer">
+	        <span>© 2024 H+ Sports. All rights reserved.</span> 
+	        <a href="#">Privacy Policy</a> | 
+	        <a href="#">Terms of Service</a> | 
+	        <a href="#">Contact Us</a>
+	    </div>
+	</div>
+</body>
+
+</html>
